@@ -176,4 +176,227 @@ h1 {
     .movie-card h3 {
         font-size: 1.5rem;
     }
+    
+    /* Responsive Search Form */
+    .search-inputs {
+        flex-direction: column;
+    }
+    
+    .input-group {
+        margin-bottom: 20px;
+    }
+    
+    .search-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .search-btn, .clear-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Pirate-themed Search Form Styles */
+.search-treasure-chest {
+    background: rgba(139, 69, 19, 0.2);
+    border: 2px solid rgba(218, 165, 32, 0.4);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 40px;
+    backdrop-filter: blur(15px);
+    position: relative;
+    overflow: hidden;
+}
+
+.search-treasure-chest::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(45deg, #DAA520, #B8860B);
+}
+
+.search-treasure-chest h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: #DAA520;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.treasure-hunt-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.search-inputs {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.input-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #DAA520;
+    font-size: 1.1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid rgba(218, 165, 32, 0.3);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #DAA520;
+    box-shadow: 0 0 15px rgba(218, 165, 32, 0.3);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.input-group input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.search-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-btn {
+    background: linear-gradient(45deg, #DAA520, #B8860B);
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(218, 165, 32, 0.3);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.search-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(218, 165, 32, 0.5);
+    background: linear-gradient(45deg, #B8860B, #9A7B0A);
+}
+
+.clear-btn {
+    background: rgba(108, 117, 125, 0.8);
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(108, 117, 125, 0.5);
+}
+
+.clear-btn:hover {
+    background: rgba(108, 117, 125, 1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(108, 117, 125, 0.3);
+}
+
+/* Search Results Message Styles */
+.search-message {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.search-message.results-found {
+    background: rgba(40, 167, 69, 0.2);
+    border: 2px solid rgba(40, 167, 69, 0.4);
+    color: #28a745;
+}
+
+.search-message.no-results {
+    background: rgba(220, 53, 69, 0.2);
+    border: 2px solid rgba(220, 53, 69, 0.4);
+    color: #dc3545;
+}
+
+/* Empty Treasure Chest Styles */
+.empty-treasure-chest {
+    text-align: center;
+    padding: 50px 30px;
+    background: rgba(139, 69, 19, 0.1);
+    border: 2px dashed rgba(218, 165, 32, 0.3);
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.pirate-message h3 {
+    font-size: 2rem;
+    color: #DAA520;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.pirate-message p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.pirate-message ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.pirate-message li {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.back-to-all-btn {
+    background: linear-gradient(45deg, #17a2b8, #138496);
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(23, 162, 184, 0.3);
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.back-to-all-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(23, 162, 184, 0.5);
+    background: linear-gradient(45deg, #138496, #117a8b);
 }
